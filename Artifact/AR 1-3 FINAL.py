@@ -1,7 +1,7 @@
 import serial
 import time
 
-# connect to Arduino
+# connect to port
 ser = serial.Serial("COM4", 115200)
 time.sleep(2)
 
@@ -72,4 +72,5 @@ while True:
         time.sleep(1)
 
     except:
+
         print("Invalid data received")
